@@ -1,0 +1,29 @@
+============================================================
+CUSTOM UNET MODEL EVALUATION RESULTS (256x256)
+============================================================
+Evaluation Date: 2025-05-25 21:39:51
+Model Path: checkpoints\G_epoch99.pth
+Model Type: unet
+Image Size: 256x256
+Samples Evaluated: 31
+------------------------------------------------------------
+
+STRUCTURAL SIMILARITY INDEX (SSIM)
+----------------------------------------
+Mean SSIM: 0.687663
+Std SSIM:  0.145097
+Median SSIM: 0.694075
+
+PEAK SIGNAL-TO-NOISE RATIO (PSNR)
+----------------------------------------
+Mean PSNR: 22.3207 dB
+Std PSNR:  5.3727 dB
+Median PSNR: 24.3012 dB
+
+LEARNED PERCEPTUAL IMAGE PATCH SIMILARITY (LPIPS)
+----------------------------------------
+Mean LPIPS: 0.438075
+Std LPIPS:  0.157519
+Median LPIPS: 0.393352
+
+============================================================

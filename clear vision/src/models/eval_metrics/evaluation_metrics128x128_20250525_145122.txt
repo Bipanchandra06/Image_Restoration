@@ -1,0 +1,27 @@
+============================================================
+MODEL EVALUATION RESULTS
+============================================================
+Evaluation Date: 2025-05-25 14:51:22
+Model Path: checkpoints\G_epoch99.pth
+Model Type: unet
+Image Size: 128x128
+Samples Evaluated: 31
+------------------------------------------------------------
+
+STRUCTURAL SIMILARITY INDEX (SSIM)
+----------------------------------------
+Mean SSIM: 0.760154
+Std SSIM:  0.149456
+Median SSIM: 0.809700
+PEAK SIGNAL-TO-NOISE RATIO (PSNR)
+----------------------------------------
+Mean PSNR: 23.9107 dB
+Std PSNR:  6.0720 dB
+Median PSNR: 25.8488 dB
+LEARNED PERCEPTUAL IMAGE PATCH SIMILARITY (LPIPS)
+----------------------------------------
+Mean LPIPS: 0.226053
+Std LPIPS:  0.148994
+Median LPIPS: 0.170333
+
+============================================================

@@ -1,0 +1,53 @@
+# config/config.yaml
+# Project Configuration
+project:
+  name: "clear-vision"
+  version: "1.0.0"
+  seed: 42
+  output_dir: "./results"
+  checkpoint_dir: "./checkpoints"
+
+# Data Configuration
+data:
+  image_size: 256
+  batch_size: 32
+  num_workers: 4
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  dataset_dir: "./data"
+  
+# Scraper Configuration
+scraper:
+  engine: "selenium"
+  search_terms: ["landscape", "portrait", "cityscape", "nature", "food", "pictures"]
+  num_images_per_term: 50
+  max_total_images: 300
+  download_path: "./data/raw"
+  sources:
+    - name: "unsplash"
+      url_template: "https://unsplash.com/s/photos/{search_term}"
+      selector: "img.YVj9w"
+    - name: "pexels"
+      url_template: "https://www.pexels.com/search/{search_term}/"
+      selector: "img.photo-item__img"
+  
+# Corruption Configuration
+corruption:
+  types: ["noise", "jpeg", "blur", "mask", "combined"]
+  noise_params:
+    gaussian_range: [0.01, 0.1]
+    salt_pepper_range: [0.01, 0.05]
+  jpeg_params:
+    quality_range: [10, 60]
+  blur_params:
+    kernel_range: [3, 9]
+    sigma_range: [1.0, 5.0]
+  mask_params:
+    ratio_range: [0.1, 0.5]
+    num_boxes_range: [1, 5]
+  combined_params:
+    num_corruptions: [2, 3]
+  input_dir: "./data/raw"
+  output_dir: "./data/corrupted"
+
