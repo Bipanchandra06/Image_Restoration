@@ -14,6 +14,7 @@ from models.gan_model import SimpleUNetGenerator  # Adjust import path if needed
 import os
 import gdown
 import tempfile
+import time
 
 st.set_page_config(page_title="Image Restoration GAN", layout="centered")
 st.title("🧠 Image Restoration using GAN")
@@ -134,7 +135,7 @@ except Exception as e:
 
 # Image upload
 uploaded_file = st.file_uploader("Upload a corrupted image", type=["jpg", "jpeg", "png"])
-
+start_time=time.time()
 if uploaded_file is not None:
     # Display uploaded image
     st.image(uploaded_file, caption="Corrupted Image", use_column_width=False)
@@ -153,7 +154,7 @@ if uploaded_file is not None:
     # Inference
     with torch.no_grad():
         output = model(input_tensor)[0].cpu().clamp(0, 1)
-
+    in_latency=time.time()-start_time
     # Convert to image and resize back to original size
     restored_img = transforms.ToPILImage()(output).resize(original_size)
 
@@ -161,6 +162,7 @@ if uploaded_file is not None:
 
     # Show result
     st.image(restored_img, caption="Restored Image", use_column_width=False)
+    st.info(f'Interference latency={in_latency}s')
 
     # Convert to JPG in memory
     buffer = BytesIO()
