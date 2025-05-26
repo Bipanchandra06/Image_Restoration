@@ -35,7 +35,7 @@ This project implements an image restoration system using GANs to restore corrup
 - ✅ **Evaluation Metrics**: PSNR, SSIM, LPIPS for comprehensive quality assessment
 - ✅ **Web Interface**: Streamlit-based application for easy image upload and restoration
 - ✅ **Inference Optimization**: Efficient model loading and processing pipeline
-
+- ✅ **Web Deployment**:The app is available at [imagerestoration](https://imagerestoration-bipanchandra.streamlit.app)
 ## Tech Stack
 
 ### Machine Learning
@@ -103,7 +103,7 @@ The model is evaluated using standard image quality metrics:
 - Median PSNR: 25.8488 dB
 - Median SSIM: 0.8097
 - Median LPIPS: 0.1703
-- Inference latency: 500 ms per image
+- Inference latency: 190 ms per image
 
 ## File Structure
 
