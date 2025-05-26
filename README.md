@@ -103,7 +103,7 @@ The model is evaluated using standard image quality metrics:
 - Median PSNR: 25.8488 dB
 - Median SSIM: 0.8097
 - Median LPIPS: 0.1703
-- Inference latency: 190 ms per image
+- Inference latency: <200 ms per image
 
 ## File Structure
 
