@@ -99,7 +99,6 @@ The model is evaluated using standard image quality metrics:
 
 ## Results
 
-[Add your specific results here, for example:]
 - Median PSNR: 25.8488 dB
 - Median SSIM: 0.8097
 - Median LPIPS: 0.1703
@@ -162,12 +161,6 @@ The project includes custom corruption algorithms that simulate realistic degrad
 3. Commit changes (`git commit -am 'Add new feature'`)
 4. Push to branch (`git push origin feature/new-feature`)
 5. Create Pull Request
-
-## Acknowledgments
-
-- PyTorch team for deep learning framework
-- Streamlit for web interface capabilities
-- Research papers and resources that inspired the GAN architecture
 
 ## Downloads & Resources
 
