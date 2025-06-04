@@ -138,7 +138,7 @@ uploaded_file = st.file_uploader("Upload a corrupted image", type=["jpg", "jpeg"
 start_time=time.time()
 if uploaded_file is not None:
     # Display uploaded image
-    st.image(uploaded_file, caption="Corrupted Image", use_column_width=False)
+    st.image(uploaded_file, caption="Corrupted Image", use_container_width=False)
 
     # Load and preprocess
     img = Image.open(uploaded_file).convert("RGB")
@@ -161,7 +161,7 @@ if uploaded_file is not None:
     from io import BytesIO
 
     # Show result
-    st.image(restored_img, caption="Restored Image", use_column_width=False)
+    st.image(restored_img, caption="Restored Image", use_container_width=False)
     st.info(f'Interference latency={in_latency}s')
 
     # Convert to JPG in memory
