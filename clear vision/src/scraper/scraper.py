@@ -26,7 +26,7 @@ class ImageScraper:
     Selenium-based web scraper for collecting high-quality images
     """
     
-    def __init__(self, config_path="/users/bipan/onedrive/desktop/clear vision/config/config.yaml"):
+    def __init__(self, config_path="config/config.yaml"):
         """
         Initialize the image scraper with configuration
         
