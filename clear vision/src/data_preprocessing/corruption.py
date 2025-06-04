@@ -23,7 +23,7 @@ class ImageCorruption:
     Module for applying various corruption methods to images
     """
     
-    def __init__(self,config=None, config_path="/users/bipan/onedrive/desktop/clear vision/config/config.yaml"):
+    def __init__(self,config=None, config_path="config/config.yaml"):
         """
         Initialize the corruption module
         
