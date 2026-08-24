@@ -146,7 +146,8 @@ if uploaded_file is not None:
 
     transform = transforms.Compose([
         transforms.Resize((config["image_size"], config["image_size"])),
-        transforms.ToTensor()
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
     ])
     
     input_tensor = transform(img).unsqueeze(0).to(device)
