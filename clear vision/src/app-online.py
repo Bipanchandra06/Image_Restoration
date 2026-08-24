@@ -146,7 +146,7 @@ if uploaded_file is not None:
 
     transform = transforms.Compose([
         transforms.Resize((config["image_size"], config["image_size"])),
-        transforms.ToTensor(),
+        transforms.ToTensor()
         
     ])
     
