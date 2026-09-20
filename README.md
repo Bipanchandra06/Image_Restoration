@@ -22,7 +22,7 @@ This project implements an image restoration system using GANs to restore corrup
   - **Noise**: Salt-and-pepper, Gaussian noise
   - **Masking**: Random patches/regions removed from images
 
-## Model Architecture
+## Model Architecture 
 
 **Generative Adversarial Network (GAN)**
 - **Generator**: U-Net architecture for image-to-image translation
